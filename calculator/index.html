@@ -184,7 +184,7 @@ function calc(p,n,units,deals,posts){
   return {low:low,mid:mid,high:high,dedicated:ded,
           adPerPost:adPerPost,monthlySponsor:monthlySponsor,monthlyAds:monthlyAds,
           monthlyTotal:monthlySponsor+monthlyAds,
-          effectiveCpm:units>0?high/units*1000:0,
+          effectiveCpm:units>0?mid/units*1000:0,
           annual:(monthlySponsor+monthlyAds)*12};
 }
 /*CALC_END*/
